@@ -1,0 +1,28 @@
+#cloud-config
+hostname: AutoSMS
+password: Cpwins1!
+config_system:
+  timezone: Europe/London
+  install_security_managment: true
+  mgmt_gui_clients_radio: any
+  mgmt_admin_radio: new_admin
+  mgmt_admin_name: NewAdmin
+  mgmt_admin_passwd: Cpwins1!
+  download_info: true
+  upload_info: true
+  upload_crash_data: true
+  ftw_sic_key: Vpn123Vpn123
+  ipstat_v6: 'off'
+  maintenance_hash: grub.pbkdf2.sha512.10000.BAD3C21B81CAFD7EE70AAA43D8C0E227DB6F01DE51953597CBFD384C46DD81C2AC7DD2B69BBD6FDCA4674AADC3DEE590D45427C943B0F84628836D7F93637429.7BDD61C3BCF8C88DD38C989885E5908483DE5AA506DDC0155BA24CB4865A94F287EA90C203881F9AE4199E39F2F05689AF9D4ED3A307DCA202EA999F60F761EF
+network:
+  version: 1
+  config:
+    - type: physical
+      name: eth0
+      mtu: 1500
+      subnets:
+        - type: static
+          address: 10.10.124.32
+          netmask: 255.255.255.0
+          gateway: 10.10.124.1
+          dns_nameservers: [8.8.8.8, 8.8.4.4]
