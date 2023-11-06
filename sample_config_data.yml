@@ -1,13 +1,13 @@
 #cloud-config
 hostname: AutoSMS
-password: Cpwins1!
+password: samplepassword!
 config_system:
   timezone: Europe/London
   install_security_managment: true
   mgmt_gui_clients_radio: any
   mgmt_admin_radio: new_admin
   mgmt_admin_name: NewAdmin
-  mgmt_admin_passwd: Cpwins1!
+  mgmt_admin_passwd: samplepassword!
   download_info: true
   upload_info: true
   upload_crash_data: true
